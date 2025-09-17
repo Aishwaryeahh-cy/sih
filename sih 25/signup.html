@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Sign Up</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('School-backgroung.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(119, 186, 199, 0.7);
+      z-index: -1;
+    }
+    .signup-container {
+      background: rgba(241, 141, 141, 0.9);
+      padding: 20px 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      width: 400px;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #003366;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .checkbox {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .checkbox input {
+      margin-right: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background: #0066cc;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #004d99;
+    }
+    .footer-links {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 13px;
+    }
+    .footer-links a {
+      margin: 0 8px;
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="signup-container">
+    <h2>Sign Up</h2>
+    <form>
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter your full name" required>
+
+      <label>Date of Birth</label>
+      <input type="date" required>
+
+      <label>Gender</label>
+      <select required>
+        <option value="">Select</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <label>Mobile Number</label>
+      <input type="tel" placeholder="Enter mobile number" required>
+
+      <label>Role</label>
+      <select required>
+        <option value="">Select Role</option>
+        <option>Student</option>
+        <option>Parent/Guardian</option>
+        <option>Teacher/Staff</option>
+        <option>Admin</option>
+      </select>
+
+      <!-- Student Fields -->
+      <label>Enrollment Number</label>
+      <input type="text" placeholder="Enter Enrollment Number">
+
+      <label>Class</label>
+      <select>
+        <option value="">Select Class</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>...</option>
+        <option>10</option>
+      </select>
+
+      <label>Relationship with Student</label>
+      <select>
+        <option value="">Select</option>
+        <option>Father</option>
+        <option>Mother</option>
+        <option>Guardian</option>
+      </select>
+
+      <!-- Teacher Fields -->
+      <label>Teacher ID</label>
+      <input type="text" placeholder="Enter Teacher ID">
+
+      <label>Student ID</label>
+      <input type="text" placeholder="Enter Student ID">
+
+      <label>Subject</label>
+      <input type="text" placeholder="Enter subject">
+
+      <!-- Login Fields -->
+      <label>Username</label>
+      <input type="text" placeholder="Choose a username" required>
+
+      <label>Password</label>
+      <input type="password" placeholder="Enter password" required>
+
+      <label>Confirm Password</label>
+      <input type="password" placeholder="Confirm password" required>
+
+      <div class="checkbox">
+        <input type="checkbox" required>
+        <label>I confirm that the above details are true as per school records.</label>
+      </div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <div class="footer-links">
+      <!-- Added Your Two Links -->
+      <p><a href="homepage.html">← Back</a></p>
+      <p><a href="login.html">Already have an account? Login</a></p>
+
+      <!-- Default Links -->
+      <a href="#">Terms & Conditions</a> | 
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Accessibility</a>
+    </div>
+  </div>
+</body>
+</html>

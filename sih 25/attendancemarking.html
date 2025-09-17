@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Selection - Government High School</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(to bottom, #83d74e, #f9f9f9);
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      font-size: 16px;
+      color: #d9e6f2;
+    }
+
+    /* Teacher Info */
+    .teacher-info {
+      text-align: center;
+      margin: 25px auto;
+      padding: 20px;
+      max-width: 500px;
+      background: rgb(245, 185, 185);
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .teacher-info h2 {
+      margin: 0;
+      font-size: 20px;
+      color: #004080;
+    }
+
+    .teacher-info p {
+      margin: 5px 0;
+      font-size: 15px;
+      color: #444;
+    }
+
+    /* Classes List */
+    .classes-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin: 30px auto;
+      max-width: 300px;
+    }
+
+    .class-box {
+      width: 100%;
+      background: hsl(38, 89%, 49%);
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      text-align: center;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #004080;
+      cursor: pointer;
+      transition: transform 0.3s, background 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .class-box:hover {
+      background: #004080;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    /* Next Button */
+    .next-btn {
+      display: block;
+      width: 200px;
+      margin: 40px auto;
+      padding: 15px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      background: #004080;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.2s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .next-btn:hover {
+      background: #0066cc;
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: #004080;
+      color: white;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Government High School, Vidyanagar</h1>
+    <p>Class Selection Portal</p>
+  </header>
+
+  <!-- Teacher Info -->
+  <div class="teacher-info">
+    <h2>Teacher: Mrs Anitha</h2>
+    <p><strong>Teacher ID:</strong> TCH-2025-1123</p>
+    <p><strong>Subject:</strong> Biology</p>
+    <p><strong>Phone Number:</strong> +91-9876543201</p>
+  </div>
+
+  <!-- Classes List -->
+  <div class="classes-container">
+    <div class="class-box">Class A1</div>
+    <div class="class-box">Class A2</div>
+    <div class="class-box">Class A3</div>
+    <div class="class-box">Class A4</div>
+    <div class="class-box">Class A5</div>
+    <div class="class-box">Class A6</div>
+    <div class="class-box">Class A7</div>
+    <div class="class-box">Class A8</div>
+    <div class="class-box">Class A9</div>
+    <div class="class-box">Class A10</div>
+  </div>
+
+  <!-- Next Button -->
+  <a href="nextpage.html" class="next-btn">Next →</a>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Government Schools, Karnataka | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
